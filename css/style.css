@@ -1,7 +1,227 @@
-body{
+body {
+    margin: 0;
+    padding: 0;
     font-size: 14px;
     font-family: PT Sans Narrow;
     font-weight: bold;
     line-height: 24px;
     color: #000000;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.container {
+    width: 940px;
+    padding: 0 10px;
+    margin: 0 auto;
+    background-color: green;
+}
+
+/*Header*/
+
+.main-header {
+    background-color: #000000;
+    margin-bottom: 60px;
+}
+
+.main-navigation {
+    /* Только для оформления сетки */
+    min-height: 60px;
+    float: left;
+    width: 780px;
+    background-color: bisque;
+}
+
+.nav-list {
+    margin: 0;
+    padding: 0;
+}
+
+.main-navigation li {
+    display: inline-block;
+}
+
+.user-block {
+    min-height: 60px;
+    float: right;
+    width: 140px;
+    background-color: bisque
+}
+
+/*Index-page*/
+/*Main*/
+
+.logo {
+    width: 368px;
+    height: 204px;
+    margin: 0 auto;
+    margin-bottom: 25px;
+}
+
+.features {
+    margin-bottom: 80px;
+}
+
+.features-item {
+    background-color: blue;
+    float: left;
+    width: 300px;
+    margin-right: 20px;    
+}
+
+.features-item:last-child {
+    margin-right: 0;
+}
+
+.index-content {
+    background-color: peachpuff;
+    padding: 60px 80px;
+    margin-bottom: 35px;
+}
+
+.index-content-left {
+    background-color: #cecece;
+    min-height: 330px;
+    width: 380px;
+    float: left;
+}
+
+.index-content-right {
+    background-color: #5d5f60;
+    min-height: 330px;
+    width: 300px;
+    float: right;
+}
+
+/*Catalog-page*/
+
+.breadcrumbs {
+    background-color: #ffe4c4;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 15px;
+}
+
+.breadcrumbs li {
+    display: inline-block
+}
+
+.left-section {
+    min-height: 490px;
+    background-color: azure;
+    width: 220px;
+    float: left;
+}
+
+.brands {
+    margin-bottom: 52px;
+}
+
+.groups {
+    margin-bottom: 50px;
+}
+
+.right-section {
+    min-height: 490px;
+    float: right;
+    width: 700px;
+    background-color: #f0ffff;
+}
+
+.items {
+    margin-bottom: 45px;
+}
+
+.item {
+    float: left;
+    margin-right: 20px;
+    width: 220px;
+    margin-bottom: 20px;
+}
+
+.item:nth-child(3n) {
+    margin-right: 0;
+}
+
+.paginator {
+    margin: 0;
+    padding: 0;
+    float: left;
+}
+
+.paginator li {
+    display: inline-block;
+    background-color: #ffe4c4;
+}
+
+/*Catalog-item-page*/
+
+.item-photos {
+    width: 460px;
+    float: left;
+    margin-top: 0;
+}
+
+.big-image {
+    width: 460px;
+    height: 500px;
+    margin-bottom: 20px;
+}
+
+.preview-list {
+    margin: 0;
+    padding: 0;
+}
+
+.preview-list li {
+    margin-right: 17px;
+    display: inline-block;
+}
+
+
+.preview-list > li:last-child {
+    margin-right: 0;
+}
+
+.item-info {
+    float: right;
+    width: 390px;
+    background-color: #294760;
+}
+
+.item-buy-block {
+    background-color: #f6f3f0;
+    width: 230px;
+}
+
+/*Footer*/
+
+.main-footer {
+    background-color: greenyellow;
+    margin-top: 65px;
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
+
+.footer-contacts {
+    background-color: #696969;
+    width: 310px;
+    float: left;
+    margin-right: 90px;
+}
+
+.footer-social {
+    background-color: #696969;
+    width: 140px;
+    float: left;
+}
+
+.footer-copyright {
+    background-color: #696969;
+    width: 140px;
+    float: right;
 }
